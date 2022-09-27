@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+main {
+    width: 100vw;
+    height:100vh;
+}
+
+.clones {
+    width: 100%;
+    height: 100%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.clon-container {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 1px 1px #0304578c;
+} 
+
+.clon-container:hover{
+    border: none;
+    box-shadow: 0 0 3px 3px #0a6f72f6;
+}
+
+.clon-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
