@@ -23,6 +23,18 @@ main {
     height: auto;
     display: grid;
     justify-content: center;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+p{
+    color:black;
+    font-weight: lighter;
 }
 
 .languajes-container {
@@ -107,17 +119,6 @@ main {
     object-fit: contain;
 }
 
-a {
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
-}
-
-p{
-    color:black;
-    font-weight: lighter;
-}
-
 .main-container-search {
     display: flex;
     justify-content: center;
@@ -146,3 +147,21 @@ p{
     background-size: contain;
     opacity: .45;
 }
+
+.main-commons {
+    display:grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: 8rem;
+    gap: 1.6rem;
+    margin-top: 4rem;;
+}
+
+.commons-container {
+    display: flex;
+}
+.commons-container img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.4rem;
+}
+
