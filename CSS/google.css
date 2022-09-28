@@ -1,3 +1,5 @@
+/*---- Estilos generales ----*/
+
 body {
     margin: 0;
     padding: 0;
@@ -10,6 +12,8 @@ a {
     cursor: pointer;
     color: #000000;
 }
+
+/*---- Estilos barra de navegación ----*/
 
 header {
     width: 100%;
@@ -42,6 +46,8 @@ nav .menu-nav .menu-icon {
     height: 20px;
 }
 
+/*---- Seccion de la imagen ----*/
+
 .container {
     margin-top: 150px;
     text-align: center;
@@ -58,6 +64,8 @@ nav .menu-nav .menu-icon {
 .container .main-logo img {
     width: 300px;
 }
+
+/*---- Seccion de busqueda ----*/
 
 .main-search {
     width: 530px;
@@ -104,6 +112,8 @@ nav .menu-nav .menu-icon {
     cursor: pointer;
 }
 
+/*---- Seccion de los botones ----*/
+
 .main-btns {
     width: 530px;
     margin: 0 auto;
@@ -131,6 +141,8 @@ nav .menu-nav .menu-icon {
     box-shadow: 0 1px 1px #292727;
     color: rgb(48, 47, 47);
 }
+
+/*---- Estilos del footer ----*/
 
 footer {
     width: 100%;

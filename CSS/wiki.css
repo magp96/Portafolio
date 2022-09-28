@@ -1,3 +1,5 @@
+/*---- Estilos generales para etiquetas ---*/
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -36,6 +38,8 @@ p{
     color:black;
     font-weight: lighter;
 }
+
+/*--- Estilos de la seccion de lenguajes ---*/
 
 .languajes-container {
     list-style: none;
@@ -111,7 +115,7 @@ p{
     justify-self: start;
 }
 
-
+/*---  Seccion de busqueda ----*/
 
 .img-lang img {
     width: 100%;
@@ -148,6 +152,8 @@ p{
     opacity: .45;
 }
 
+/*---- seccion de commons o servicios ----*/
+
 .main-commons {
     display:grid;
     grid-template-columns: repeat(4, 25%);
@@ -165,3 +171,4 @@ p{
     margin-right: 0.4rem;
 }
 
+/*---- footer ----*/
