@@ -135,7 +135,7 @@ function showProducts(list){// maquetación de elementos necesarios para mostrar
     
         const productFigure = document.createElement('figure');
         const productImgCart = document.createElement('img');
-        productImgCart.setAttribute('src','./icons/bt_add_to_cart.svg');
+        productImgCart.setAttribute('src','./icons/icons-yard/bt_add_to_cart.svg');
         productFigure.addEventListener('click', addProduct);
     
         //ensamblaje de todos los elementos html necesarios de los productos 

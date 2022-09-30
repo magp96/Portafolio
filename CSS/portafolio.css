@@ -3,47 +3,60 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+    background-color: #345678;
+}
 html{
     font-size: 62.5%;
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-main {
-    font-size: 1.6rem;
-    width: 100%;
+h1{
+    color:#ffffff;
+    text-align: center;
 }
 
 /*---- Estilos seccion start ----*/
 
-.start {
+.main-presentacion {
     width: 100%;
-    display: flex;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     justify-items:center;
-    flex-wrap: wrap;
+    align-items: center;
     border-bottom: 1px solid #333333;
-    padding: 2px 2px 8px 2px;
-    margin: 2px 2px 8px 2px ;
 }
 
+
 .presentacion{
-    margin: .4rem;
+    width: 100%;
+    color: #ffffff;
 }
+.presentacion p {
+    text-align: center;
+}
+
 
 .logo-container{
     display:flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
     width: 100%;
-    height: 10%;
+    height: 100%;
 }
-.start img{
-    width:30%;
-    height:30%;
-    object-fit: contain;
+.logo-container img{
+    margin:0;
+    background-color: #eeffdd;
+    width:100px;
+    height:100px;
+    border-radius: 100%;
 }
 
-/*-- Estilos de la seccion clones (Index)*/
+/*--- Estilos de la seccion clones ---*/
 
 .clones {
     width: 100%;
@@ -53,6 +66,7 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1.5rem;
+    margin-bottom: 1.6rem;
 }
 .clon-container {
     display: flex;
@@ -68,15 +82,16 @@ main {
 }
 
 .clon-container img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
 }
 
 a{
     text-decoration: none;
-    color: #464545;
+    color: #b1acac;
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .projects {
@@ -85,11 +100,12 @@ a{
     justify-content: center;
     display: flex;
     justify-items: center;
+    margin-bottom: 4rem;
 }
 
 .pelis{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 1px solid #743b0e
 }
 
@@ -99,35 +115,59 @@ a{
     object-fit:contain;
 }
 
+/*---- footer ----*/
+
+footer {
+    position: fixed;
+    width: 100%;
+    height:2rem;
+    display:flex;
+    justify-content: center;
+    bottom: 0;
+    background-color: #ce8423dc;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer li{
+    margin-right: 2rem;
+    list-style: none;
+    width:1.6rem;
+    height:1.6rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor:pointer;
+}
+
+.icon-whats{
+    background-image: url('/icons/icons-general/whats.png');
+}
+.icon-face{
+    background-image: url('/icons/icons-general/icono-face.png');
+}
+.icon-lkd{
+    background-image: url('/icons/icons-general/icono-lkd.png');
+}
 
 @media (min-width: 600px){
-    .presentacion {
-        width: 60%;
-        margin:0;
-        padding: 3px;
+    .main-presentacion {
+        height:250px;
     }
-    .logo-container{
-        width: 40%;
-    }
-    .logo-container img{
-        width:30%;
-        height:30%;
-        object-fit: cover;
+    .presentacion p{
+        font-size: 2rem;
     }
 }
 
 @media (min-width: 900px){
+    .main-presentacion {
+        height:200px;
+    }
     .presentacion {
-        width: 60%;
-        margin:0;
-        padding: 3px;
-    }
-    .logo-container{
-        width: 40%;
-    }
-    .logo-container img{
-        width:30%;
-        height:30%;
-        object-fit: cover;
+        justify-content: flex-start;
     }
 }

@@ -7,6 +7,10 @@ html {
     font-size: 62.5%;
 }
 
+body{
+    background: linear-gradient(to right, #2367ee,#9032ff);
+}
+
 header{
     width: 100vw;
     height: 4rem;
@@ -41,11 +45,13 @@ li {
 /*---- Estilos de la seccion del slider ---*/
 main {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background: linear-gradient(to right, #2367ee,#9032ff);
 }
 .main-slider{
     width: 100%;
-    height: 20rem;
+    padding-bottom: 1.6rem;
+    border-bottom: .1rem solid #c5b7b9;
 }
 .slider-container {
     width: 100%;
@@ -53,33 +59,50 @@ main {
     overflow: hidden;
 }
 
-.slider-container ul{
+.slider{
     display: flex;
     animation: mostrar 20s infinite alternate linear;
-    width: 400%;
+    width: 300%;
 }
 
-.slider-container li {
-    width: 100%;
-    height:100%
+.slider li {
+    width:500px;
+    height:15rem;
 }
-.slider-container img{
+.slider img{
     width: 100%;
-    height:100%;
-    align-self: flex-start;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 @keyframes mostrar{
     0%{margin-left: 0%;}
     20%{margin-left: 0%;}
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+    25%{margin-left: -25%;}
+    45%{margin-left: -25%;}
 
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
+    50%{margin-left: -50%;}
+    70%{margin-left: -50%;}
 
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+    75%{margin-left: -75%;}
+    100%{margin-left: -75%;}
+}
+
+.movies {
+    width: 100%;
+    margin: 2rem auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 1.5rem;
+    background: linear-gradient(to right, #2367ee,#9032ff);
+}
+
+.movie-container {
+    width: 100px;
+    height:180px;
+}
+.movie-container img {
+    width:100px;
+    height: 150px;
 }
