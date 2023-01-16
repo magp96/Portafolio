@@ -1,10 +1,15 @@
+:root{
+    --baseColor: #ffffff;
+    --colorFondo: #345678;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body{
-    background-color: #345678;
+    background-color: var(--colorFondo);
 }
 html{
     font-size: 62.5%;
@@ -12,7 +17,7 @@ html{
 }
 
 h1{
-    color:#ffffff;
+    color: var(--baseColor);
     text-align: center;
 }
 
@@ -32,7 +37,7 @@ h1{
 
 .presentacion{
     width: 100%;
-    color: #ffffff;
+    color: var(--baseColor);
 }
 .presentacion p {
     text-align: center;
@@ -50,10 +55,25 @@ h1{
 }
 .logo-container img{
     margin:0;
-    background-color: #eeffdd;
+    background-color: var(--baseColor);
     width:100px;
     height:100px;
     border-radius: 100%;
+}
+
+#img1:hover {
+    z-index: 2px;
+    transform: rotate(30deg);
+}
+
+#img2:hover {
+    z-index: 2px;
+    transform: rotate(-30deg);
+}
+
+#img3:hover {
+    z-index: 2px;
+    transform: rotate(30deg);
 }
 
 /*--- Estilos de la seccion clones ---*/
@@ -106,7 +126,11 @@ a{
 .pelis{
     width: 150px;
     height: 150px;
-    border: 1px solid #743b0e
+    border: 1px solid #743b0e;
+}
+
+.pelis:hover {
+    box-shadow: 0 0 3px 3px #743b0e;
 }
 
 .pelis img{
@@ -115,44 +139,6 @@ a{
     object-fit:contain;
 }
 
-/*---- footer ----*/
-
-footer {
-    position: fixed;
-    width: 100%;
-    height:2rem;
-    display:flex;
-    justify-content: center;
-    bottom: 0;
-    background-color: #ce8423dc;
-    align-items: center;
-}
-footer ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-footer li{
-    margin-right: 2rem;
-    list-style: none;
-    width:1.6rem;
-    height:1.6rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor:pointer;
-}
-
-.icon-whats{
-    background-image: url('/icons/icons-general/whats.png');
-}
-.icon-face{
-    background-image: url('/icons/icons-general/icono-face.png');
-}
-.icon-lkd{
-    background-image: url('/icons/icons-general/icono-lkd.png');
-}
 
 @media (min-width: 600px){
     .main-presentacion {

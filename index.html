@@ -4,53 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/portafolio.css">
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Inicio</title>
 </head>
 <body>
     <header>
+        <nav class="navbar">
+            <ul class="list-navbar">
+                <li><a href="./portafolio.html">Proyectos</a></li>
+                <li><a href="#">Sugerencias</a></li>
+                <li><a href="#">Curriculum</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="main-presentacion">
-            <div class="presentacion">
-                <p>El presente portafolio tiene como función mostrar
-                    mis habilidades como desarrollador Frontend, con 
-                    conocimientos en: HTML5, Css, JavaScript y Github.
-                </p>
+        <section class="principal">
+            <div class="spiner-container">
+                <div class="principal-spiner">
+                </div>
+                <div class="container-img">
+                    <picture>
+                        <img src="./images/FotoMarlon.jpeg" alt="">
+                    </picture>
+                </div>
             </div>
-            <div class="logo-container logo-css">
-                <img src="./logos/logo-css.png" alt="">
-                <img src="./logos/logo-html.png.opdownload">
-                <img src="./logos/logo-js.jpg" alt="">
-            </div>
-        </section>
-        <h1>Clones</h1>
-        <section class="clones">
-            <div class="clon-container">
-                <a href="./google.html">
-                    <img src="./images/icon-goo.png" alt="">
-                </a>
-            </div>
-            <div class="clon-container">
-                <a href="./wiki.html">
-                    <img src="./images/icono-wikip.png" alt="">
-                </a>
-            </div>
-            <div class="clon-container">
-                <a href="./yardSale.html">
-                    <img src="./logos/favicon_yard_sale.svg" alt="">
-                </a>
-            </div>
-        </section>
-        <h1>Proyectos</h1>
-        <section class="projects">
-            
-            <div class="pelis">
-                <img src="./logos/pelis-logo.png">
-                <a href="./pelis.html">Pelis</a>
-            </div>
-        </section>
+            <div class="principal-info-container">
+                
+                <h4>
+                    Hola, soy Marlon!! 
+                    Desarrollador front end con conocimientos en CSS, HTML5, JavaScript y Github.
+                </h4>
+                
+                    <button class="button-principal">
+                        Contactos   
+                    </button>
+                    <button class="button-principal">
+                        descargarhv
+                    </button>
 
+            </div>
+        </section>
     </main>
     <footer>
         <ul>
@@ -65,5 +58,7 @@
             </li>
         </ul>
     </footer>
+    <script src="./index.js"></script>
 </body>
+
 </html>
